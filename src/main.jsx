@@ -3,12 +3,14 @@ import { createRoot } from 'react-dom/client'
 import { store } from './store'
 import { Provider } from 'react-redux'
 import PokemonApp from './PokemonApp.jsx'
+import { TodoApp } from './TodoApp.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-      <PokemonApp />
+      {/* <PokemonApp /> */}
+      <TodoApp />
     </Provider>
   </StrictMode>,
 )
